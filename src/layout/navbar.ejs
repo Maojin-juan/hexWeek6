@@ -1,20 +1,18 @@
-<div>
-  <div>
-    <a href="#">
+<div class="container flex justify-between py-5 lg:py-9">
+  <div class="flex w-full justify-between lg:gap-9">
+    <a class="flex" href="#">
       <h1>Vivre</h1>
     </a>
-    <input type="text" placeholder="搜尋文章" />
+    <span class="material-symbols-outlined flex">menu</span>
+    <div class="hidden border border-gray-200 lg:flex">
+      <input class="w-[276px]" type="text" placeholder="搜尋文章" />
+      <span class="material-symbols-outlined">search</span>
+    </div>
   </div>
-  <div>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <a href="#">所有文章</a>
-    <a href="#">訂閱方案</a>
-    <a href="#">關於我們</a>
-    <a href="#">登入/註冊</a>
-  </div>
+  <ul class="hidden items-center gap-5 lg:flex">
+    <li><a class="px-5 py-2" href="#">所有文章</a></li>
+    <li><a class="px-5 py-2" href="#">訂閱方案</a></li>
+    <li><a class="px-5 py-2" href="#">關於我們</a></li>
+    <li><a class="px-5 py-2" href="#">登入/註冊</a></li>
+  </ul>
 </div>

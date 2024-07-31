@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
   </head>
-  <body>
+  <body class="leading-[1.2] tracking-[.1em]">
     <%- include('./src/layout/navbar.ejs'); -%>
-    
+    <main class="bg-sm-banner h-auto w-full">
+      <div class="flex flex-col items-center pb-12 pt-[377px] text-white">
+        <p class="pb-2 font-bold">獻給新世代的生活風格誌</p>
+        <h2 class="pb-5 text-[28px] font-black">一起探索生活的無限可能</h2>
+        <button
+          class="flex gap-3 rounded-full border border-[#569573] bg-[#569573] px-5 py-3"
+        >
+          馬上訂閱
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </button>
+      </div>
+    </main>
 
     <script type="module" src="../main.js"></script>
   </body>

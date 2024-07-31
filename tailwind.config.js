@@ -3,38 +3,33 @@ export default {
   content: ["./src/**/*.{html,js,ejs}"],
   theme: {
     extend: {
-      backgroundImage: {},
-
-      fontSize: {
-        "2xl": [
-          "1.5rem",
-          {
-            lineHeight: "2.25rem",
-            fontWeight: "700",
-          },
-        ],
+      backgroundImage: {
+        "sm-banner":
+          'url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/banner-sm.png?raw=true")',
+        banner:
+          'url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/banner.png?raw=true")',
       },
+
+      fontSize: {},
 
       colors: {},
 
       fontFamily: {
-        sans: ["Lato", "Roboto Mono", "sans-serif"],
-        RobotoM: ["Roboto Mono"],
+        sans: ["Noto Serif TC", "sans-serif"],
       },
 
       container: {
         center: true,
         padding: {
-          DEFAULT: "14px",
-          md: "2.25rem",
+          DEFAULT: "12px",
         },
       },
       screens: {
-        sm: "576px",
-        md: "768px",
-        lg: "992px",
-        xl: "1200px",
-        "2xl": "1400px",
+        sm: "540px",
+        md: "720px",
+        lg: "960px",
+        xl: "1140px",
+        "2xl": "1320px",
       },
     },
   },
