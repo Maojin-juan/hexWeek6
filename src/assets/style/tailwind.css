@@ -10,10 +10,21 @@
   /* * {
     outline: 1px solid black;
   } */
+  body {
+    @apply leading-[1.2] tracking-widest;
+  }
 }
 
 @layer components {
   /* 自組元件 */
+  .card {
+    @apply grid w-[324px];
+  }
+
+  .tags {
+    @apply text-nowrap rounded-[4px] bg-[#E8E3DA] px-2 py-1 text-xs font-bold leading-[1.6] tracking-widest text-[#6E6B67];
+  }
+
   .paginationTabs {
     @apply flex items-center justify-center;
   }
@@ -31,7 +42,7 @@
 @layer utilities {
   /* 自組樣式 */
   .sub-title {
-    @apply pb-6 text-2xl font-black;
+    @apply text-2xl font-black leading-[1.2];
   }
   .dango::before {
     @apply absolute bg-[url(https://cdn.jsdelivr.net/gh/linxuan-yu/CDN/img/dango.png)] bg-cover;

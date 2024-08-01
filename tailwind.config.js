@@ -32,6 +32,9 @@ export default {
         xl: "1140px",
         "2xl": "1320px",
       },
+      boxShadow: {
+        custom: "0px 2px 8px 0px #6E6B6714",
+      },
     },
   },
   plugins: [],
