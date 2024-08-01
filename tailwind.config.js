@@ -16,6 +16,7 @@ export default {
 
       fontFamily: {
         sans: ["Noto Serif TC", "sans-serif"],
+        Newsreader: ["Newsreader"],
       },
 
       container: {

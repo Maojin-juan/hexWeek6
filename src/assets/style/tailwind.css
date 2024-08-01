@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
 @tailwind base;
 @tailwind components;
@@ -10,33 +10,10 @@
   /* * {
     outline: 1px solid black;
   } */
-  td {
-    @apply p-0;
-  }
-
-  select {
-    @apply cursor-pointer;
-  }
-
-  label {
-    @apply cursor-pointer;
-  }
-
-  input[type="checkbox"] {
-    @apply cursor-pointer;
-  }
 }
 
 @layer components {
   /* 自組元件 */
-  .codeLabel {
-    @apply rounded-sm bg-gray-100 px-0.5 font-RobotoM text-green-700;
-  }
-
-  .input {
-    @apply rounded-sm border border-black bg-transparent p-2;
-  }
-
   .paginationTabs {
     @apply flex items-center justify-center;
   }
@@ -53,15 +30,11 @@
 
 @layer utilities {
   /* 自組樣式 */
-  .sidebar {
-    @apply flex items-center pl-8 text-gray-900;
+  .sub-title {
+    @apply pb-6 text-2xl font-black;
   }
-
-  .sidebarSelected {
-    @apply border-l-4 border-green-700 text-green-700;
-  }
-
-  .sidebarSpanMinus {
-    @apply ml-[-4px];
+  .dango::before {
+    @apply absolute bg-[url(https://cdn.jsdelivr.net/gh/linxuan-yu/CDN/img/dango.png)] bg-cover;
+    content: "🍡";
   }
 }

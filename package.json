@@ -1,5 +1,5 @@
 {
-  "name": "hexWeek6",
+  "name": "hexweek6",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.4",
     "ejs": "^3.1.9",
     "eslint-plugin-tailwindcss": "^3.17.4",
     "gh-pages": "^6.1.1",
@@ -21,10 +22,9 @@
     "tailwindcss": "^3.4.6",
     "vite": "^5.3.4",
     "vite-plugin-ejs": "^1.6.4",
-    "vite-plugin-live-reload": "^3.0.2",
-    "cssnano": "^7.0.4"
+    "vite-plugin-live-reload": "^3.0.2"
   },
   "dependencies": {
-    
+    "jquery": "^3.7.1"
   }
 }

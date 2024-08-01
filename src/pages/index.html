@@ -7,19 +7,232 @@
   </head>
   <body class="leading-[1.2] tracking-[.1em]">
     <%- include('./src/layout/navbar.ejs'); -%>
-    <main class="bg-sm-banner h-auto w-full">
+    <main class="h-auto w-full bg-sm-banner bg-cover">
       <div class="flex flex-col items-center pb-12 pt-[377px] text-white">
         <p class="pb-2 font-bold">獻給新世代的生活風格誌</p>
         <h2 class="pb-5 text-[28px] font-black">一起探索生活的無限可能</h2>
-        <button
-          class="flex gap-3 rounded-full border border-[#569573] bg-[#569573] px-5 py-3"
-        >
+        <a class="flex items-center gap-3 rounded-full bg-[#569573] px-5 py-3">
           馬上訂閱
-          <span class="material-symbols-outlined">arrow_forward</span>
-        </button>
+          <span class="material-symbols-outlined text-xl">east</span>
+        </a>
       </div>
     </main>
-
+    <section class="container py-12">
+      <h3 class="sub-title">熱門主題</h3>
+      <ul class="grid gap-2">
+        <li class="relative">
+          <a href="#">
+            <img
+              class="rounded-br-[1.25rem] rounded-tl-[1.25rem]"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-1-sm.png?raw=true"
+              alt="theme-1"
+            />
+            <span
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
+            >
+              城市漫遊者
+            </span>
+          </a>
+        </li>
+        <li class="relative">
+          <a href="#">
+            <img
+              class="rounded-br-[1.25rem] rounded-tl-[1.25rem]"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-2-sm.png?raw=true"
+              alt="theme-2"
+            />
+            <span
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
+            >
+              秘境尋蹤人
+            </span>
+          </a>
+        </li>
+        <li class="relative">
+          <a href="#">
+            <img
+              class="rounded-br-[1.25rem] rounded-tl-[1.25rem]"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-3-sm.png?raw=true"
+              alt="theme-3"
+            />
+            <span
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
+            >
+              品味設計家
+            </span>
+          </a>
+        </li>
+        <li class="relative">
+          <a href="#">
+            <img
+              class="rounded-br-[1.25rem] rounded-tl-[1.25rem]"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-4-sm.png?raw=true"
+              alt="theme-4"
+            />
+            <span
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
+            >
+              美食探險記
+            </span>
+          </a>
+        </li>
+        <li class="relative">
+          <a href="#">
+            <img
+              class="rounded-br-[1.25rem] rounded-tl-[1.25rem]"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-5-sm.png?raw=true"
+              alt="theme-5"
+            />
+            <span
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
+            >
+              美學建築誌
+            </span>
+          </a>
+        </li>
+        <li class="relative">
+          <a href="#">
+            <img
+              class="rounded-br-[1.25rem] rounded-tl-[1.25rem]"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-6-sm.png?raw=true"
+              alt="theme-6"
+            />
+            <span
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
+            >
+              慢活生活行
+            </span>
+          </a>
+        </li>
+        <li class="relative">
+          <a href="#">
+            <img
+              class="rounded-br-[1.25rem] rounded-tl-[1.25rem]"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-7-sm.png?raw=true"
+              alt="theme-7"
+            />
+            <span
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
+            >
+              工藝匠心賞
+            </span>
+          </a>
+        </li>
+        <li class="relative">
+          <a href="#">
+            <img
+              class="rounded-br-[1.25rem] rounded-tl-[1.25rem]"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-8-sm.png?raw=true"
+              alt="theme-8"
+            />
+            <span
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
+            >
+              時尚先鋒派
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <article class="container py-12">
+      <h3 class="sub-title">精選文章</h3>
+      <ul class="pb-10">
+        <li class="grid w-[324px] gap-6 border-b border-black pb-6">
+          <img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/articles-1-sm.png?raw=true"
+            alt="article-1"
+          />
+          <div>
+            <h4 class="pb-2 text-xl font-bold">私人島嶼的露營奇遇記</h4>
+            <p>
+              遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧..
+            </p>
+          </div>
+          <span class="font-Newsreader text-xl font-bold">Read More</span>
+        </li>
+        <li class="grid w-[324px] gap-6 border-b border-black pb-6">
+          <img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/articles-2-sm.png?raw=true"
+            alt="article-2"
+          />
+          <div>
+            <h4 class="pb-2 text-xl font-bold">窺探米其林三星主廚的絕密手藝</h4>
+            <p>
+              在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+            </p>
+          </div>
+          <div class="flex items-center justify-between font-bold">
+            <span class="font-Newsreader text-xl">Read More</span>
+            <span class="rounded-s bg-[#E8E3DA] px-2 py-1">會員專屬</span>
+          </div>
+        </li>
+      </ul>
+      <div class="flex items-center justify-between">
+        <span>1 / 5</span>
+        <div class="flex items-center gap-6">
+          <span
+            class="material-symbols-outlined rounded-full border border-[#6C757D] px-4 py-1 text-[#6C757D]"
+          >
+            west
+          </span>
+          <hr class="w-20 border border-[#6C757D]" />
+          <span
+            class="material-symbols-outlined rounded-full border border-[#6C757D] px-4 py-1 text-[#6C757D]"
+          >
+            east
+          </span>
+        </div>
+      </div>
+    </article>
+    <section class="space-y-6 px-[53px] py-12">
+      <div class="space-y-3 text-center">
+        <h6 class="font-bold">\ 母親節強檔活動 /</h6>
+        <h3 class="sub-title">家庭訂閱方案限時 7 折</h3>
+      </div>
+      <ul class="space-y-4">
+        <li class="space-x-3">
+          <p>
+            <span class="material-symbols-outlined">check</span>
+            每月最新文章無限閱讀
+          </p>
+        </li>
+        <li class="space-x-3">
+          <p>
+            <span class="material-symbols-outlined">check</span>
+            專屬會員限定內容
+          </p>
+        </li>
+        <li class="space-x-3">
+          <p>
+            <span class="material-symbols-outlined">check</span>
+            定期電子報
+          </p>
+        </li>
+        <li class="space-x-3">
+          <p>
+            <span class="material-symbols-outlined">check</span>
+            年度精選禮物
+          </p>
+        </li>
+        <li class="space-x-3">
+          <p>
+            <span class="material-symbols-outlined">check</span>
+            24 /7 優先客戶服務
+          </p>
+        </li>
+        <li class="space-x-3">
+          <p>
+            <span class="material-symbols-outlined">check</span>
+            為每個成員量身打造專屬行程
+          </p>
+        </li>
+      </ul>
+      <button
+        class="rounded-full border border-[#569573] bg-[#569573] px-5 py-3 text-white"
+      >
+        我想了解
+      </button>
+    </section>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
