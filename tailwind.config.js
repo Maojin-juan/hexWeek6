@@ -33,7 +33,7 @@ export default {
         "2xl": "1320px",
       },
       boxShadow: {
-        custom: "0px 2px 8px 0px #6E6B6714",
+        card: "0px 2px 8px 0px #6E6B6714",
       },
     },
   },

@@ -22,7 +22,7 @@ function moveOutputPlugin() {
 }
 
 export default defineConfig({
-  base: "/tailwind-template/",
+  base: "/hexWeek6/",
   plugins: [
     liveReload([
       "./src/layout/**/*.ejs",

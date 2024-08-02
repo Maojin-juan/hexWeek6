@@ -44,8 +44,7 @@
   .sub-title {
     @apply text-2xl font-black leading-[1.2];
   }
-  .dango::before {
-    @apply absolute bg-[url(https://cdn.jsdelivr.net/gh/linxuan-yu/CDN/img/dango.png)] bg-cover;
-    content: "🍡";
+  .dango {
+    @apply absolute -bottom-2 -right-12;
   }
 }
