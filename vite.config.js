@@ -40,6 +40,7 @@ export default defineConfig({
   server: {
     // 啟動 server 時預設開啟的頁面
     open: "src/pages/index.html",
+    port: 5487,
   },
   build: {
     rollupOptions: {

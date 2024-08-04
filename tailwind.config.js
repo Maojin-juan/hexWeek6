@@ -12,11 +12,16 @@ export default {
 
       fontSize: {},
 
-      colors: {},
+      colors: {
+        "accent-100": "#E0EFDE",
+        "accent-200": "#569573",
+        "gray-500": "#343A40",
+      },
 
       fontFamily: {
         sans: ["Noto Serif TC", "sans-serif"],
         Newsreader: ["Newsreader"],
+        icon: ["Material Icons"],
       },
 
       container: {

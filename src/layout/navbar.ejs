@@ -1,20 +1,30 @@
 <div class="container flex justify-between py-5 lg:py-9">
-  <div class="flex w-full justify-between lg:gap-9">
+  <div
+    class="flex w-full items-center justify-between lg:justify-normal lg:gap-9"
+  >
     <a class="flex" href="#">
       <h1 class="text-xl text-[#343A40]">Vivre</h1>
     </a>
-    <button>
-      <span class="material-symbols-outlined flex">menu</span>
+    <button class="flex lg:hidden">
+      <span class="material-symbols-outlined">menu</span>
     </button>
-    <div class="hidden border border-gray-200 lg:flex">
-      <input class="w-[276px]" type="text" placeholder="搜尋文章" />
-      <span class="material-symbols-outlined">search</span>
+    <div
+      class="hidden items-center rounded-full border border-gray-200 px-5 lg:flex"
+    >
+      <input class="max-w-[210px] py-3" type="text" placeholder="搜尋文章" />
+      <button class="transition-all hover:scale-125">
+        <span class="material-symbols-outlined text-">search</span>
+      </button>
     </div>
   </div>
-  <ul class="hidden items-center gap-5 lg:flex">
+  <ul class="hidden items-center gap-5 text-nowrap font-bold lg:flex">
     <li><a class="px-5 py-2" href="#">所有文章</a></li>
     <li><a class="px-5 py-2" href="#">訂閱方案</a></li>
     <li><a class="px-5 py-2" href="#">關於我們</a></li>
-    <li><a class="px-5 py-2" href="#">登入/註冊</a></li>
+    <li>
+      <a class="bg-accent-200 rounded-full px-6 py-4 text-white" href="#">
+        登入/註冊
+      </a>
+    </li>
   </ul>
 </div>

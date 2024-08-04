@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 @tailwind base;
 @tailwind components;
@@ -12,15 +13,12 @@
   } */
   body {
     @apply leading-[1.2] tracking-widest;
+    --swiper-navigation-size: 1.5rem;
   }
 }
 
 @layer components {
   /* 自組元件 */
-  .card {
-    @apply grid w-[324px];
-  }
-
   .tags {
     @apply text-nowrap rounded-[4px] bg-[#E8E3DA] px-2 py-1 text-xs font-bold leading-[1.6] tracking-widest text-[#6E6B67];
   }
@@ -44,7 +42,29 @@
   .sub-title {
     @apply text-2xl font-black leading-[1.2];
   }
-  .dango {
-    @apply absolute -bottom-2 -right-12;
+
+  .dango-sm {
+    @apply absolute -bottom-2 -right-12 lg:hidden;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    @apply !static;
+  }
+
+  .swiper-button-prev:disabled,
+  .swiper-button-next:disabled {
+    @apply pointer-events-none opacity-50;
+  }
+
+  .swiper-button {
+    @apply rounded-full px-4 py-1 text-gray-400 outline outline-1 outline-gray-400;
+  }
+
+  .swiper-button-prev::after {
+    @apply swiper-button !font-icon !content-['\f1e6'];
+  }
+  .swiper-button-next::after {
+    @apply swiper-button !font-icon !content-['\f1df'];
   }
 }
