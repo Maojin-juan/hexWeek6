@@ -7,17 +7,20 @@
   </head>
   <body>
     <%- include('./src/layout/navbar.ejs'); -%>
-    <main class="h-auto w-full bg-sm-banner bg-cover lg:container lg:bg-banner">
-      <div class="flex flex-col items-center pb-12 pt-[377px] text-white">
-        <p class="pb-2 font-bold">獻給新世代的生活風格誌</p>
-        <h2 class="pb-5 text-[28px] font-black">一起探索生活的無限可能</h2>
-        <a
-          class="flex items-center gap-3 rounded-full bg-accent-200 px-5 py-3 font-bold transition-all hover:scale-125"
-          href="#"
-        >
-          馬上訂閱
-          <span class="material-symbols-outlined text-xl">east</span>
-        </a>
+    <div id="navbar-placeholder"></div>
+    <main class="lg:container">
+      <div class="bg-sm-banner bg-cover lg:bg-banner">
+        <div class="flex flex-col items-center pb-12 pt-[377px] text-white">
+          <p class="pb-2 font-bold">獻給新世代的生活風格誌</p>
+          <h2 class="pb-5 text-[28px] font-black">一起探索生活的無限可能</h2>
+          <a
+            class="flex items-center gap-3 rounded-full bg-accent-200 px-5 py-3 font-bold transition-all hover:scale-125"
+            href="#"
+          >
+            馬上訂閱
+            <span class="material-symbols-outlined text-xl">east</span>
+          </a>
+        </div>
       </div>
     </main>
     <section class="bg-[#FFFEF5]">
@@ -27,12 +30,12 @@
           <li class="relative">
             <a href="#">
               <img
-                class="w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] lg:hidden"
+                class="w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:hidden"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-1-sm.png?raw=true"
                 alt="theme-1"
               />
               <img
-                class="hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] lg:block"
+                class="hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:block"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-1.png?raw=true"
                 alt="theme-1"
               />
@@ -46,12 +49,12 @@
           <li class="relative">
             <a href="#">
               <img
-                class="w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] lg:hidden"
+                class="w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:hidden"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-2-sm.png?raw=true"
                 alt="theme-2"
               />
               <img
-                class="hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] lg:block"
+                class="hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:block"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-2.png?raw=true"
                 alt="theme-2"
               />
@@ -65,12 +68,12 @@
           <li class="relative">
             <a href="#">
               <img
-                class="w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] lg:hidden"
+                class="w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:hidden"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-3-sm.png?raw=true"
                 alt="theme-3"
               />
               <img
-                class="hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] lg:block"
+                class="hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:block"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-3.png?raw=true"
                 alt="theme-3"
               />
@@ -84,12 +87,12 @@
           <li class="relative">
             <a href="#">
               <img
-                class="w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] lg:hidden"
+                class="w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:hidden"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-4-sm.png?raw=true"
                 alt="theme-4"
               />
               <img
-                class="hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] lg:block"
+                class="hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:block"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-4.png?raw=true"
                 alt="theme-4"
               />
@@ -103,12 +106,12 @@
           <li class="relative">
             <a href="#">
               <img
-                class="w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] lg:hidden"
+                class="w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:hidden"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-5-sm.png?raw=true"
                 alt="theme-5"
               />
               <img
-                class="hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] lg:block"
+                class="hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:block"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-5.png?raw=true"
                 alt="theme-5"
               />
@@ -122,12 +125,12 @@
           <li class="relative">
             <a href="#">
               <img
-                class="w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] lg:hidden"
+                class="w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:hidden"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-6-sm.png?raw=true"
                 alt="theme-6"
               />
               <img
-                class="hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] lg:block"
+                class="hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:block"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-6.png?raw=true"
                 alt="theme-6"
               />
@@ -141,12 +144,12 @@
           <li class="relative">
             <a href="#">
               <img
-                class="w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] lg:hidden"
+                class="w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:hidden"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-7-sm.png?raw=true"
                 alt="theme-7"
               />
               <img
-                class="hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] lg:block"
+                class="hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:block"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-7.png?raw=true"
                 alt="theme-7"
               />
@@ -160,12 +163,12 @@
           <li class="relative">
             <a href="#">
               <img
-                class="w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] lg:hidden"
+                class="w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:hidden"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-8-sm.png?raw=true"
                 alt="theme-8"
               />
               <img
-                class="hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] lg:block"
+                class="hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:block"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-8.png?raw=true"
                 alt="theme-8"
               />
@@ -236,9 +239,9 @@
             <p>5</p>
           </div>
           <div class="flex items-center gap-5">
-            <div class="swiper-button-prev !mt-0 !h-8 !w-14"></div>
+            <div class="swiper-button-prev !mt-0 !flex !h-8 !w-14"></div>
             <hr class="mx-auto w-20 border-gray-400" />
-            <div class="swiper-button-next !mt-0 !h-8 !w-14"></div>
+            <div class="swiper-button-next !mt-0 !flex !h-8 !w-14"></div>
           </div>
         </div>
       </div>
@@ -308,7 +311,7 @@
     <article class="bg-[#FFFEF5]">
       <div class="container space-y-6 overflow-hidden py-12">
         <h3 class="sub-title">大家都在看</h3>
-        <%- include('./src/layout/section-5.ejs'); -%>
+        <%- include('./src/layout/section5-PC.ejs'); -%>
         <div class="swiper2 2xl:hidden">
           <ul class="swiper-wrapper">
             <li
@@ -464,9 +467,9 @@
       <div class="flex items-center justify-between pb-6">
         <h3 class="sub-title">品味生活</h3>
         <div class="hidden items-center gap-5 lg:flex">
-          <div class="swiper-button-prev !mt-0 !h-8 !w-14"></div>
+          <div class="swiper-button-prev !mt-0 !flex !h-8 !w-14"></div>
           <hr class="mx-auto w-20 border-gray-400" />
-          <div class="swiper-button-next !mt-0 !h-8 !w-14"></div>
+          <div class="swiper-button-next !mt-0 !flex !h-8 !w-14"></div>
         </div>
       </div>
       <div class="swiper3 overflow-hidden">
@@ -500,13 +503,13 @@
             <h2 class="text-[2.5rem] font-black text-[#6E6B67]">藝.</h2>
             <img
               class="hidden w-full md:block"
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-1-sm.png?raw=true"
-              alt="life-1"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-2-sm.png?raw=true"
+              alt="life-2"
             />
             <img
               class="w-full md:hidden"
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-1.png?raw=true"
-              alt="life-1"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-2.png?raw=true"
+              alt="life-2"
             />
             <div class="space-y-5 font-bold tracking-widest">
               <p>｜解構教主級時裝設計大師的獨...</p>
@@ -524,12 +527,12 @@
           <li class="swiper-slide space-y-6 lg:space-y-9">
             <h2 class="text-[2.5rem] font-black text-[#6E6B67]">旅.</h2>
             <img
-              class="w-full"
+              class="hidden w-full md:block"
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-3-sm.png?raw=true"
               alt="life-3"
             />
             <img
-              class="hidden w-full md:block"
+              class="w-full md:hidden"
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-3.png?raw=true"
               alt="life-3"
             />
@@ -549,119 +552,8 @@
         </ul>
       </div>
     </article>
-    <section class="bg-[#FFFBE5]">
-      <div class="container grid-cols-2 overflow-hidden py-12 lg:grid">
-        <div class="flex flex-col items-center pb-16 lg:justify-center">
-          <h6 class="pb-4 font-bold">今天又不知道要去哪裡了嗎？</h6>
-          <div class="sub-title space-y-2 pb-6 text-center">
-            <p>Vivre</p>
-            <p>給你意想不到生活風格提案</p>
-          </div>
-          <a
-            class="flex items-center gap-3 rounded-full bg-accent-200 px-5 py-3 font-bold text-white"
-          >
-            馬上訂閱
-            <span class="material-symbols-outlined text-xl">east</span>
-          </a>
-        </div>
-        <div class="swiper4">
-          <ul class="swiper-wrapper grid-cols-2 lg:!grid lg:gap-6">
-            <li class="swiper-slide relative">
-              <span
-                class="absolute -top-4 left-4 flex items-center gap-2 rounded-[4px] border border-[#E0EFDE] bg-white px-3 py-[10px] font-bold text-[#406C55]"
-              >
-                <span class="material-symbols-outlined">arrow_right</span>
-                人氣行程
-              </span>
-              <img
-                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/projects-2.png?raw=true"
-                alt="projects-2"
-              />
-              <span
-                class="absolute bottom-0 flex items-center justify-between p-3 font-bold text-white"
-              >
-                <p>親子露營要帶甚麼？</p>
-                <span class="material-symbols-outlined">east</span>
-              </span>
-            </li>
-            <li class="swiper-slide relative">
-              <span
-                class="absolute -top-4 left-4 flex items-center gap-2 rounded-[4px] border border-[#E0EFDE] bg-white px-3 py-[10px] font-bold text-[#406C55]"
-              >
-                <span class="material-symbols-outlined">arrow_right</span>
-                編輯推薦
-              </span>
-              <img
-                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/projects-4.png?raw=true"
-                alt="projects-4"
-              />
-              <span
-                class="absolute bottom-0 flex items-center justify-between p-3 font-bold text-white"
-              >
-                <p>質感房間改造攻略！</p>
-                <span class="material-symbols-outlined">east</span>
-              </span>
-            </li>
-            <li class="swiper-slide relative">
-              <span
-                class="absolute -top-4 left-4 flex items-center gap-2 rounded-[4px] border border-[#E0EFDE] bg-white px-3 py-[10px] font-bold text-[#406C55]"
-              >
-                <span class="material-symbols-outlined">arrow_right</span>
-                編輯推薦
-              </span>
-              <img
-                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/projects-1.png?raw=true"
-                alt="projects-1"
-              />
-              <span
-                class="absolute bottom-0 flex items-center justify-between p-3 font-bold text-white"
-              >
-                <p>山女孩的健行筆記</p>
-                <span class="material-symbols-outlined">east</span>
-              </span>
-            </li>
-            <li class="swiper-slide relative">
-              <span
-                class="absolute -top-4 left-4 flex items-center gap-2 rounded-[4px] border border-[#E0EFDE] bg-white px-3 py-[10px] font-bold text-[#406C55]"
-              >
-                <span class="material-symbols-outlined">arrow_right</span>
-                熱門文章
-              </span>
-              <img
-                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/projects-3.png?raw=true"
-                alt="projects-3"
-              />
-              <span
-                class="absolute bottom-0 flex items-center justify-between p-3 font-bold text-white"
-              >
-                <p>適合溜小孩的海邊景點推薦</p>
-                <span class="material-symbols-outlined">east</span>
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="py-12 text-center text-gray-500">
-        <h3 class="sub-title pb-4">想看什麼主題由你決定</h3>
-        <div class="grid place-items-center gap-9">
-          <p class="text-xl font-bold">歡迎投稿與我們分享</p>
-          <a
-            class="rounded-full border border-accent-200 bg-accent-200 px-5 py-3 font-bold text-white"
-          >
-            我想了解
-          </a>
-        </div>
-      </div>
-      <div>
-        <p
-          class="border-t border-[#ADB5BD] py-5 text-center font-Newsreader text-[#6E6B67]"
-        >
-          ©Vivre 2024 All right Reserved
-        </p>
-      </div>
-    </footer>
+    <%- include('./src/layout/section7.ejs'); -%> <%-
+    include('./src/layout/footer.ejs'); -%>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

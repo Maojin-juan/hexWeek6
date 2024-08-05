@@ -13,6 +13,7 @@ export default {
       fontSize: {},
 
       colors: {
+        "primary-100": "#FFFDF5",
         "accent-100": "#E0EFDE",
         "accent-200": "#569573",
         "gray-500": "#343A40",

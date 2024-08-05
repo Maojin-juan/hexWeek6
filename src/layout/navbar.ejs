@@ -1,30 +1,65 @@
-<div class="container flex justify-between py-5 lg:py-9">
-  <div
-    class="flex w-full items-center justify-between lg:justify-normal lg:gap-9"
-  >
-    <a class="flex" href="#">
-      <h1 class="text-xl text-[#343A40]">Vivre</h1>
-    </a>
-    <button class="flex lg:hidden">
-      <span class="material-symbols-outlined">menu</span>
-    </button>
+<nav
+  class="fixed z-50 w-full bg-white bg-opacity-80 backdrop-blur-sm"
+  id="navbar"
+>
+  <div class="container flex justify-between py-5 lg:py-9">
     <div
-      class="hidden items-center rounded-full border border-gray-200 px-5 lg:flex"
+      class="flex w-full items-center justify-between lg:justify-normal lg:gap-9"
     >
-      <input class="max-w-[210px] py-3" type="text" placeholder="搜尋文章" />
-      <button class="transition-all hover:scale-125">
-        <span class="material-symbols-outlined text-">search</span>
-      </button>
-    </div>
-  </div>
-  <ul class="hidden items-center gap-5 text-nowrap font-bold lg:flex">
-    <li><a class="px-5 py-2" href="#">所有文章</a></li>
-    <li><a class="px-5 py-2" href="#">訂閱方案</a></li>
-    <li><a class="px-5 py-2" href="#">關於我們</a></li>
-    <li>
-      <a class="bg-accent-200 rounded-full px-6 py-4 text-white" href="#">
-        登入/註冊
+      <a class="flex" href="#">
+        <h1 class="text-xl text-[#343A40]">Vivre</h1>
       </a>
-    </li>
-  </ul>
+      <button class="flex lg:hidden" id="menu-button">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <div
+        class="hidden items-center rounded-full border border-gray-200 bg-white px-5 lg:flex"
+      >
+        <input class="max-w-[210px] py-3" type="text" placeholder="搜尋文章" />
+        <button class="transition-all hover:scale-125">
+          <span class="material-symbols-outlined text-">search</span>
+        </button>
+      </div>
+    </div>
+    <ul
+      class="hidden items-center gap-5 text-nowrap font-bold lg:flex"
+      id="nav-links"
+    >
+      <li><a class="px-5 py-2" href="#">所有文章</a></li>
+      <li><a class="px-5 py-2" href="#">訂閱方案</a></li>
+      <li><a class="px-5 py-2" href="#">關於我們</a></li>
+      <li>
+        <a class="rounded-full bg-accent-200 px-6 py-4 text-white" href="#">
+          登入/註冊
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="mobile-menu" class="bg-primary-100 fixed inset-0 z-50 hidden">
+  <div class="container flex flex-col">
+    <button id="close-button" class="mb-6 mt-2 size-11 self-end">
+      <span class="material-symbols-outlined p-3">close</span>
+    </button>
+    <ul class="flex flex-col gap-6 pb-10 font-bold">
+      <li
+        class="flex items-center rounded-full border border-gray-200 bg-white px-5"
+      >
+        <input class="w-full py-3" type="text" placeholder="搜尋文章" />
+        <button class="transition-all hover:scale-125">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+      </li>
+      <li><a class="p-3" href="#">所有文章</a></li>
+      <li><a class="p-3" href="#">訂閱方案</a></li>
+      <li><a class="p-3" href="#">關於我們</a></li>
+    </ul>
+    <a
+      class="rounded-full bg-accent-200 px-6 py-4 text-center text-white"
+      href="#"
+    >
+      登入/註冊
+    </a>
+  </div>
 </div>
