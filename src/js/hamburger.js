@@ -1,11 +1,17 @@
-document.getElementById("menu-button").addEventListener("click", function () {
-  const mobileMenu = document.getElementById("mobile-menu");
-  mobileMenu.classList.remove("hidden");
-  document.body.classList.add("overflow-hidden");
-});
-
-document.getElementById("close-button").addEventListener("click", function () {
-  const mobileMenu = document.getElementById("mobile-menu");
-  mobileMenu.classList.add("hidden");
-  document.body.classList.remove("overflow-hidden");
+document.addEventListener("DOMContentLoaded", () => {
+  const mobileMenu = document.getElementById("mobile-menu"),
+    closeButton = document.getElementById("close-button"),
+    menuButton = document.getElementById("menu-button"),
+    toggleMenu = (open) => {
+      mobileMenu.classList.toggle("-translate-x-full", !open);
+      mobileMenu.classList.toggle("translate-x-0", open);
+      if (open) mobileMenu.classList.add("transition-all");
+      document.body.classList.toggle("overflow-hidden", open);
+    };
+  menuButton.addEventListener("click", () => toggleMenu(true));
+  closeButton.addEventListener("click", () => toggleMenu(false));
+  window.addEventListener(
+    "resize",
+    () => window.innerWidth > 959.5 && toggleMenu(false),
+  );
 });
