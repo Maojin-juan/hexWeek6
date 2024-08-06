@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up</title>
+  </head>
+  <body>
+    <%- include('./src/layout/navbar.ejs'); -%>
+    <section>
+      <div class="lg grid md:container md:grid-cols-12">
+        <hr class="col-span-12 hidden border-gray-300 lg:block" />
+        <div
+          class="col-span-6 my-[3.75rem] flex flex-col gap-10 border border-primary-300 bg-white p-10 md:col-start-4 md:my-[6.25rem] md:rounded-xl"
+        >
+          <h2 class="sub-title text-start text-accent-200">註冊</h2>
+          <form class="flex flex-col gap-4" action="#">
+            <div>
+              <label class="font-bold" for="email">會員帳號</label>
+              <div>
+                <input
+                  class="mt-3 w-full bg-gray-100 px-4 py-3 font-semibold"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="請輸入會員帳號"
+                  required=""
+                />
+              </div>
+            </div>
+            <div>
+              <label class="font-bold" for="password">密碼</label>
+              <div>
+                <input
+                  class="mt-3 w-full bg-gray-100 px-4 py-3 font-semibold"
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="請輸入密碼"
+                  required=""
+                />
+              </div>
+            </div>
+            <div>
+              <label class="font-bold" for="password">電子信箱</label>
+              <div>
+                <input
+                  class="mt-3 w-full bg-gray-100 px-4 py-3 font-semibold"
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="請輸入電子信箱"
+                  required=""
+                />
+              </div>
+            </div>
+            <button
+              class="flex items-center justify-center gap-3 rounded-full bg-accent-200 px-5 py-3 font-bold text-white"
+              type="submit"
+            >
+              立即註冊
+              <span class="material-symbols-outlined text-xl">east</span>
+            </button>
+          </form>
+          <div class="flex w-full max-w-lg items-center">
+            <hr class="flex-grow border-gray-300" />
+            <span class="px-3 font-semibold text-gray-300">
+              或以其他方式註冊
+            </span>
+            <hr class="flex-grow border-gray-300" />
+          </div>
+          <div class="flex flex-col gap-2 font-bold">
+            <button
+              class="flex items-center justify-center gap-3 bg-gray-100 py-3 text-[#52525B]"
+            >
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/icons-google.png?raw=true"
+                alt="google-sing up"
+              />
+              使用 Google 註冊
+            </button>
+            <button
+              class="flex items-center justify-center gap-3 bg-gray-100 py-3 text-[#52525B]"
+            >
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/icons-facebook.png?raw=true"
+                alt="facebook-sign-up"
+              />
+              使用 Facebook 註冊
+            </button>
+          </div>
+          <div class="flex justify-center gap-3 font-semibold">
+            <p>已經是會員了？</p>
+            <a class="text-accent-200" href="../pages/login.html">點此登入</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('./src/layout/footer.ejs'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
