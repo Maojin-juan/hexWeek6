@@ -14,8 +14,12 @@ export default {
 
       colors: {
         "primary-100": "#FFFDF5",
+        "primary-300": "#E8E3DA",
         "accent-100": "#E0EFDE",
         "accent-200": "#569573",
+        "gray-100": "#F8F9FA",
+        "gray-300": "#ADB5BD",
+        "gray-400": "#6C757D",
         "gray-500": "#343A40",
       },
 

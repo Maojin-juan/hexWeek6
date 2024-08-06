@@ -12,13 +12,16 @@
     outline: 1px solid black;
   } */
   body {
-    @apply leading-[1.2] tracking-widest;
+    @apply bg-primary-100 leading-[1.2] tracking-widest;
     --swiper-navigation-size: 1.5rem;
   }
 }
 
 @layer components {
   /* 自組元件 */
+  .tags-group {
+    @apply flex gap-2.5 py-2;
+  }
   .tags {
     @apply text-nowrap rounded-[4px] bg-[#E8E3DA] px-2 py-1 text-xs font-bold leading-[1.6] tracking-widest text-[#6E6B67];
   }

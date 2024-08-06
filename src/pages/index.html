@@ -7,7 +7,6 @@
   </head>
   <body>
     <%- include('./src/layout/navbar.ejs'); -%>
-    <div id="navbar-placeholder"></div>
     <main class="lg:container">
       <div class="bg-sm-banner bg-cover lg:bg-banner">
         <div class="flex flex-col items-center pb-12 pt-[377px] text-white">
@@ -330,7 +329,7 @@
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-1-sm.png?raw=true"
                 alt="hots-1"
               />
-              <ul class="flex gap-2.5 py-2">
+              <ul class="tags-group">
                 <li><a class="tags" href="#">#夜貓行程</a></li>
                 <li><a class="tags" href="#">#barhopping</a></li>
                 <li><a class="tags" href="#">#全台酒吧</a></li>
@@ -359,7 +358,7 @@
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-3-sm.png?raw=true"
                 alt="hots-2"
               />
-              <ul class="flex gap-2.5 py-2">
+              <ul class="tags-group">
                 <li><a class="tags" href="#">#雞白湯</a></li>
                 <li><a class="tags" href="#">#拉麵</a></li>
                 <li><a class="tags" href="#">#台北美食</a></li>
@@ -388,7 +387,7 @@
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-4-sm.png?raw=true"
                 alt="hots-1"
               />
-              <ul class="flex gap-2.5 py-2">
+              <ul class="tags-group">
                 <li><a class="tags" href="#">#熱帶國家</a></li>
                 <li><a class="tags" href="#">#海邊</a></li>
                 <li><a class="tags" href="#">#無敵海景</a></li>
@@ -417,7 +416,7 @@
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-5-sm.png?raw=true"
                 alt="hots-4"
               />
-              <ul class="flex gap-2.5 py-2">
+              <ul class="tags-group">
                 <li><a class="tags" href="#">#說走就走</a></li>
                 <li><a class="tags" href="#">#出國玩</a></li>
                 <li><a class="tags" href="#">#東亞</a></li>
@@ -446,7 +445,7 @@
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-2-sm.png?raw=true"
                 alt="hots-5"
               />
-              <ul class="flex gap-2.5 py-2">
+              <ul class="tags-group">
                 <li><a class="tags" href="#">#戶外</a></li>
                 <li><a class="tags" href="#">#露營控</a></li>
                 <li><a class="tags" href="#">#凹豆</a></li>
@@ -552,8 +551,23 @@
         </ul>
       </div>
     </article>
-    <%- include('./src/layout/section7.ejs'); -%> <%-
-    include('./src/layout/footer.ejs'); -%>
+    <%- include('./src/layout/section7.ejs'); -%>
+    <div class="container">
+      <div
+        class="py-12 text-center text-gray-500 lg:flex lg:justify-between lg:py-20"
+      >
+        <h3 class="sub-title pb-4 lg:text-[2rem]">想看什麼主題由你決定</h3>
+        <div class="grid place-items-center gap-9 lg:place-items-end">
+          <p class="text-xl font-bold lg:text-2xl">歡迎投稿與我們分享</p>
+          <a
+            class="rounded-full border border-accent-200 bg-accent-200 px-5 py-3 font-bold text-white"
+          >
+            我想了解
+          </a>
+        </div>
+      </div>
+    </div>
+    <%- include('./src/layout/footer.ejs'); -%>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

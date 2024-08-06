@@ -72,7 +72,7 @@ const swiper3 = new Swiper(".swiper3", {
 });
 
 const swiper4 = new Swiper(".swiper4", {
-  modules: [Grid, History, Autoplay],
+  modules: [History, Autoplay],
   slidesPerView: 1,
   spaceBetween: 24,
   autoplay: {
@@ -87,6 +87,24 @@ const swiper4 = new Swiper(".swiper4", {
     1140: {
       slidesPerView: 4,
       spaceBetween: false,
+    },
+  },
+});
+
+const swiper5 = new Swiper(".swiper5", {
+  modules: [Grid, Autoplay],
+  slidesPerView: 1,
+  spaceBetween: 24,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    720: {
+      slidesPerView: 3,
+      grid: {
+        rows: 3,
+      },
     },
   },
 });
