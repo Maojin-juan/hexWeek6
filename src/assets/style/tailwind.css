@@ -56,13 +56,28 @@
   }
 
   .swiper-button {
-    @apply rounded-full px-4 py-1 text-gray-400 outline outline-1 outline-gray-400;
+    @apply rounded-full px-4 py-1 !font-icon text-gray-400 outline outline-1 outline-gray-400;
   }
 
   .swiper-button-prev::after {
-    @apply swiper-button !font-icon !content-['\f1e6'];
+    @apply swiper-button !content-['\f1e6'];
   }
   .swiper-button-next::after {
-    @apply swiper-button !font-icon !content-['\f1df'];
+    @apply swiper-button !content-['\f1df'];
+  }
+
+  .fade-out {
+    @apply relative overflow-hidden;
+  }
+
+  .fade-out::after {
+    content: "";
+    @apply absolute left-0 top-0 h-full w-full;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    pointer-events: none;
   }
 }

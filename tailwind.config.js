@@ -14,7 +14,9 @@ export default {
 
       colors: {
         "primary-100": "#FFFDF5",
+        "primary-200": "#FFFBE5",
         "primary-300": "#E8E3DA",
+        "primary-400": "#6E6B67",
         "accent-100": "#E0EFDE",
         "accent-200": "#569573",
         "gray-100": "#F8F9FA",
