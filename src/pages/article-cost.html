@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>homepage</title>
+    <title>article</title>
   </head>
   <body>
     <%- include('./src/layout/navbar.ejs'); -%>
@@ -56,13 +56,14 @@
           />
         </div>
         <div class="mt-6 flex flex-col items-center gap-4 font-bold lg:mt-10">
-          <div class="flex flex-col text-center lg:flex-row lg:text-start">
-            <p>本篇為會員專屬文章</p>
-            <span class="hidden xl:inline-block">，</span>
-            <p>馬上訂閱瀏覽所有內容！</p>
-          </div>
+          <p class="text-center leading-relaxed">
+            本篇為會員專屬文章
+            <span class="hidden lg:inline-block">，</span>
+            <br class="block lg:hidden" />
+            馬上訂閱瀏覽所有內容！
+          </p>
           <a
-            class="flex items-center justify-center gap-3 rounded-full bg-accent-200 px-5 py-3 font-bold text-white"
+            class="btn-click flex items-center justify-center gap-3 rounded-full bg-accent-200 px-5 py-3 font-bold text-white"
             href="./subscribe.html"
           >
             我要訂閱
@@ -92,7 +93,7 @@
                 <div
                   class="text-end font-Newsreader text-xl font-bold text-accent-200"
                 >
-                  <span>Read More</span>
+                  <a class="readmore" href="#">Read More</a>
                 </div>
               </div>
             </li>
@@ -112,7 +113,7 @@
                 <div
                   class="text-end font-Newsreader text-xl font-bold text-accent-200"
                 >
-                  <span>Read More</span>
+                  <a class="readmore" href="#">Read More</a>
                 </div>
               </div>
             </li>
@@ -125,8 +126,8 @@
                 alt="read-1"
               />
               <div class="col-span-6">
-                <h3 class="pb-2 text-xl font-black">
-                  和寵物去露營 - 大自然之旅的...
+                <h3 class="mb-2 text-ellipsis text-xl font-black">
+                  和寵物去露營 - 大自然之旅的雙倍體驗
                 </h3>
                 <p class="pb-3 text-gray-400">
                   說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當的...
@@ -134,7 +135,7 @@
                 <div
                   class="text-end font-Newsreader text-xl font-bold text-accent-200"
                 >
-                  <span>Read More</span>
+                  <a class="readmore" href="#">Read More</a>
                 </div>
               </div>
             </li>

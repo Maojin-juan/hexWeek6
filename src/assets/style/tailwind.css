@@ -11,6 +11,9 @@
   /* * {
     outline: 1px solid black;
   } */
+  input {
+    @apply outline-none;
+  }
   body {
     @apply bg-primary-100 leading-[1.2] tracking-widest;
     --swiper-navigation-size: 1.5rem;
@@ -23,7 +26,7 @@
     @apply flex gap-2.5 py-2;
   }
   .tags {
-    @apply text-nowrap rounded-[4px] bg-[#E8E3DA] px-2 py-1 text-xs font-bold leading-[1.6] tracking-widest text-[#6E6B67];
+    @apply text-nowrap rounded-[4px] bg-primary-300 px-2 py-1 text-xs font-bold leading-[1.6] tracking-widest text-primary-400 transition-all hover:text-black;
   }
 
   .paginationTabs {
@@ -43,7 +46,31 @@
 @layer utilities {
   /* 自組樣式 */
   .sub-title {
-    @apply text-2xl font-black leading-[1.2];
+    @apply text-2xl font-black;
+  }
+
+  .index-img-rules {
+    @apply hidden rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:block;
+  }
+
+  .index-img-sm-rules {
+    @apply w-full rounded-br-[1.25rem] rounded-tl-[1.25rem] xl:hidden;
+  }
+
+  .index-events-li {
+    @apply flex items-center gap-3;
+  }
+
+  .breadcrumbs-li {
+    @apply inline-flex items-center;
+  }
+
+  .btn-click {
+    @apply transition-all hover:scale-110 focus:scale-100;
+  }
+
+  .readmore {
+    @apply hover:text-accent-200-dark transition-all;
   }
 
   .dango-sm {

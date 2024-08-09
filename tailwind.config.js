@@ -19,6 +19,7 @@ export default {
         "primary-400": "#6E6B67",
         "accent-100": "#E0EFDE",
         "accent-200": "#569573",
+        "accent-200-dark": "#3D7054",
         "gray-100": "#F8F9FA",
         "gray-300": "#ADB5BD",
         "gray-400": "#6C757D",
@@ -49,5 +50,35 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        ".no-spinner": {
+          "&::-webkit-outer-spin-button": {
+            "-webkit-appearance": "none",
+            margin: 0,
+          },
+          "&::-webkit-inner-spin-button": {
+            "-webkit-appearance": "none",
+            margin: 0,
+          },
+          "&[type='number']": {
+            "-moz-appearance": "textfield",
+          },
+        },
+      });
+    },
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".text-ellipsis": {
+          display: "-webkit-box",
+          "-webkit-line-clamp": "1",
+          "-webkit-box-orient": "vertical",
+          overflow: "hidden",
+          "text-overflow": "ellipsis",
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
 };
