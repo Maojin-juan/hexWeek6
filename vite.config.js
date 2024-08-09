@@ -25,6 +25,7 @@ export default defineConfig({
   base: "/hexWeek6/",
   plugins: [
     liveReload([
+      "./src/components/**/*.ejs",
       "./src/layout/**/*.ejs",
       "./src/pages/**/*.ejs",
       "./src/pages/**/*.html",
