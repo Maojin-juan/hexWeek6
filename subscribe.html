@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>subscribe</title>
+    <script type="module" crossorigin src="/hexWeek6/assets/main-D7yKPFcN.js"></script>
+    <link rel="stylesheet" crossorigin href="/hexWeek6/assets/main-B3dHIHND.css">
+  </head>
+  <body>
+    <nav
+  class="fixed z-50 w-full bg-primary-100 bg-opacity-80 backdrop-blur-sm"
+  id="navbar"
+>
+  <div class="container flex justify-between py-5 lg:py-9">
+    <div
+      class="flex w-full items-center justify-between lg:justify-normal lg:gap-9"
+    >
+      <a class="btn-click flex" href="../pages/index.html">
+        <h1 class="text-xl text-[#343A40]">Vivre</h1>
+      </a>
+      <button class="flex lg:hidden" id="menu-button">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <div
+        class="hidden items-center rounded-full border border-gray-200 bg-white px-5 lg:flex"
+      >
+        <input class="max-w-[210px] py-3" type="text" placeholder="搜尋文章" />
+        <button class="btn-click">
+          <span class="material-symbols-outlined text-">search</span>
+        </button>
+      </div>
+    </div>
+    <ul
+      class="hidden items-center gap-5 text-nowrap font-bold lg:flex"
+      id="nav-links"
+    >
+      <li>
+        <a class="btn-click block px-5 py-2" href="../pages/article-cost.html">
+          所有文章
+        </a>
+      </li>
+      <li>
+        <a class="btn-click block px-5 py-2" href="../pages/subscribe.html">
+          訂閱方案
+        </a>
+      </li>
+      <li>
+        <a class="btn-click block px-5 py-2" href="../pages/about.html">
+          關於我們
+        </a>
+      </li>
+      <li>
+        <a
+          class="btn-click block rounded-full bg-accent-200 px-6 py-4 text-white"
+          href="../pages/signUp.html"
+        >
+          登入/註冊
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div
+  id="mobile-menu"
+  class="fixed inset-0 z-50 -translate-x-full transform bg-primary-100"
+>
+  <div class="container flex flex-col">
+    <button id="close-button" class="mb-6 mt-2 size-11 self-end">
+      <span class="material-symbols-outlined p-3">close</span>
+    </button>
+    <ul class="flex flex-col gap-6 pb-10 font-bold">
+      <li
+        class="flex items-center rounded-full border border-gray-200 bg-white px-5"
+      >
+        <input class="w-full py-3" type="text" placeholder="搜尋文章" />
+        <button class="transition-all hover:scale-125">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+      </li>
+      <li><a class="p-3" href="../pages/article-cost.html">所有文章</a></li>
+      <li><a class="p-3" href="../pages/subscribe.html">訂閱方案</a></li>
+      <li><a class="p-3" href="../pages/about.html">關於我們</a></li>
+    </ul>
+    <a
+      class="rounded-full bg-accent-200 px-6 py-4 text-center text-white"
+      href="../pages/signUp.html"
+    >
+      登入/註冊
+    </a>
+  </div>
+</div>
+<div id="navbar-placeholder"></div>
+    <section>
+      <div class="container">
+        <ol
+  class="mb-2 mt-4 flex items-center whitespace-nowrap py-3 font-semibold text-accent-200"
+>
+  <li class="breadcrumbs-li">
+    <a
+      class="flex items-center text-sm hover:text-blue-600 focus:text-blue-600 focus:outline-none"
+      href="../pages/index.html"
+    >
+      首頁
+    </a>
+    <svg
+      class="size-5 shrink-0"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round"></path>
+    </svg>
+  </li>
+  <li class="breadcrumbs-li truncate text-sm font-semibold" aria-current="page">
+    訂閱方案
+  </li>
+</ol>
+        <h2 class="sub-title pb-10 xl:text-[2.5rem]">訂閱方案</h2>
+        <div>
+          <div class="flex grid-cols-12 pb-6 font-bold md:grid md:gap-6">
+            <a
+              class="col-span-2 col-start-5 w-full bg-accent-200 py-3 text-center text-white"
+              href="#"
+            >
+              年繳
+            </a>
+            <a
+              class="col-span-2 col-start-7 w-full py-3 text-center text-accent-200 transition-all hover:bg-accent-200 hover:text-white"
+              href="#"
+            >
+              月繳
+            </a>
+          </div>
+          <ul class="flex grid-cols-12 flex-col gap-6 pb-[6.25rem] sm:grid">
+            <li
+              class="col-span-8 col-start-3 flex flex-col rounded-xl border border-primary-300 bg-white p-6 xl:col-span-4"
+            >
+              <div
+                class="space-y-4 pb-8 font-bold text-[#52525B] xl:pb-[3.75rem]"
+              >
+                <h6 class="text-center">輕量型</h6>
+                <div class="flex items-center justify-center gap-4 xl:pb-10">
+                  <p class="text-[2rem]">NT 99</p>
+                  <p class="font-black text-[#A1A1AA]">/ 月</p>
+                </div>
+              </div>
+              <ul class="space-y-7 pb-[3.75rem] text-[#52525B]">
+                <li class="flex items-center gap-2">
+                  <span class="material-icons">check_box</span>
+                  每月最新文章無限閱讀
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-icons">check_box</span>
+                  專屬會員限定內容
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-icons">check_box</span>
+                  定期電子報
+                </li>
+              </ul>
+              <a
+                class="btn-click mt-auto flex items-center justify-center gap-3 rounded-full bg-gray-100 px-5 py-3 font-bold text-gray-400"
+                href="./checkout.html"
+              >
+                我要訂閱
+                <span class="material-symbols-outlined text-xl">east</span>
+              </a>
+            </li>
+            <li
+              class="col-span-8 col-start-3 flex flex-col rounded-xl border border-primary-300 bg-white p-6 xl:col-span-4"
+            >
+              <div
+                class="space-y-4 pb-8 font-bold text-[#52525B] xl:pb-[3.75rem]"
+              >
+                <h6 class="text-center">玩咖型</h6>
+                <div class="flex items-center justify-center gap-4 xl:pb-10">
+                  <p class="text-[2rem]">NT 159</p>
+                  <p class="font-black text-[#A1A1AA]">/ 月</p>
+                </div>
+              </div>
+              <ul class="space-y-7 pb-[3.75rem] text-[#52525B] xl:pb-10">
+                <li class="flex items-center gap-2">
+                  <span class="material-icons">check_box</span>
+                  每月最新文章無限閱讀
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-icons">check_box</span>
+                  專屬會員限定內容
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-icons">check_box</span>
+                  定期電子報
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-icons">check_box</span>
+                  年度精選禮物
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-icons">check_box</span>
+                  24/7 優先客戶服務
+                </li>
+              </ul>
+              <a
+                class="btn-click mt-auto flex items-center justify-center gap-3 rounded-full bg-gray-100 px-5 py-3 font-bold text-gray-400"
+                href="./checkout.html"
+              >
+                我要訂閱
+                <span class="material-symbols-outlined text-xl">east</span>
+              </a>
+            </li>
+            <li
+              class="col-span-8 col-start-3 rounded-xl border-2 border-accent-200 bg-white p-6 xl:col-span-4"
+            >
+              <div
+                class="space-y-4 pb-8 font-bold text-[#52525B] xl:pb-[3.75rem]"
+              >
+                <h6 class="text-center">家庭型</h6>
+                <div class="flex items-center justify-center gap-4 xl:pb-4">
+                  <p class="text-[2rem]">NT 599</p>
+                  <p class="font-black text-[#A1A1AA]">/ 月</p>
+                </div>
+                <del class="flex justify-center text-gray-300 xl:!mt-0">
+                  NT 899
+                </del>
+              </div>
+              <ul class="space-y-7 pb-[3.75rem] text-gray-500">
+                <li class="flex items-center gap-2">
+                  <span class="material-icons">check_box</span>
+                  每月最新文章無限閱讀
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-icons">check_box</span>
+                  專屬會員限定內容
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-icons">check_box</span>
+                  定期電子報
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-icons">check_box</span>
+                  年度精選禮物
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-icons">check_box</span>
+                  24/7 優先客戶服務
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-icons">check_box</span>
+                  為每個成員量身打造專屬行程
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-icons">check_box</span>
+                  最多 5 個家庭成員共享
+                </li>
+              </ul>
+              <a
+                class="btn-click flex items-center justify-center gap-3 rounded-full bg-accent-200 px-5 py-3 font-bold text-white"
+                href="./checkout.html"
+              >
+                我要訂閱
+                <span class="material-symbols-outlined text-xl">east</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+  <div class="md:container">
+    <p
+      class="border-t border-[#ADB5BD] py-5 text-center font-Newsreader text-[#6E6B67] lg:font-semibold"
+    >
+      ©Vivre 2024 All right Reserved
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

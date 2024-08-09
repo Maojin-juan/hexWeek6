@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout</title>
+    <script type="module" crossorigin src="/hexWeek6/assets/main-D7yKPFcN.js"></script>
+    <link rel="stylesheet" crossorigin href="/hexWeek6/assets/main-B3dHIHND.css">
+  </head>
+  <body>
+    <nav
+  class="fixed z-50 w-full bg-primary-100 bg-opacity-80 backdrop-blur-sm"
+  id="navbar"
+>
+  <div class="container flex justify-between py-5 lg:py-9">
+    <div
+      class="flex w-full items-center justify-between lg:justify-normal lg:gap-9"
+    >
+      <a class="btn-click flex" href="../pages/index.html">
+        <h1 class="text-xl text-[#343A40]">Vivre</h1>
+      </a>
+      <button class="flex lg:hidden" id="menu-button">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <div
+        class="hidden items-center rounded-full border border-gray-200 bg-white px-5 lg:flex"
+      >
+        <input class="max-w-[210px] py-3" type="text" placeholder="搜尋文章" />
+        <button class="btn-click">
+          <span class="material-symbols-outlined text-">search</span>
+        </button>
+      </div>
+    </div>
+    <ul
+      class="hidden items-center gap-5 text-nowrap font-bold lg:flex"
+      id="nav-links"
+    >
+      <li>
+        <a class="btn-click block px-5 py-2" href="../pages/article-cost.html">
+          所有文章
+        </a>
+      </li>
+      <li>
+        <a class="btn-click block px-5 py-2" href="../pages/subscribe.html">
+          訂閱方案
+        </a>
+      </li>
+      <li>
+        <a class="btn-click block px-5 py-2" href="../pages/about.html">
+          關於我們
+        </a>
+      </li>
+      <li>
+        <a
+          class="btn-click block rounded-full bg-accent-200 px-6 py-4 text-white"
+          href="../pages/signUp.html"
+        >
+          登入/註冊
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div
+  id="mobile-menu"
+  class="fixed inset-0 z-50 -translate-x-full transform bg-primary-100"
+>
+  <div class="container flex flex-col">
+    <button id="close-button" class="mb-6 mt-2 size-11 self-end">
+      <span class="material-symbols-outlined p-3">close</span>
+    </button>
+    <ul class="flex flex-col gap-6 pb-10 font-bold">
+      <li
+        class="flex items-center rounded-full border border-gray-200 bg-white px-5"
+      >
+        <input class="w-full py-3" type="text" placeholder="搜尋文章" />
+        <button class="transition-all hover:scale-125">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+      </li>
+      <li><a class="p-3" href="../pages/article-cost.html">所有文章</a></li>
+      <li><a class="p-3" href="../pages/subscribe.html">訂閱方案</a></li>
+      <li><a class="p-3" href="../pages/about.html">關於我們</a></li>
+    </ul>
+    <a
+      class="rounded-full bg-accent-200 px-6 py-4 text-center text-white"
+      href="../pages/signUp.html"
+    >
+      登入/註冊
+    </a>
+  </div>
+</div>
+<div id="navbar-placeholder"></div>
+    <main>
+      <div class="container space-y-2 pb-10 pt-4">
+        <ol
+  class="flex items-center whitespace-nowrap py-3 font-semibold text-accent-200"
+>
+  <li class="breadcrumbs-li">
+    <a
+      class="flex items-center text-sm hover:text-blue-600 focus:text-blue-600 focus:outline-none"
+      href="../pages/index.html"
+    >
+      首頁
+    </a>
+    <svg
+      class="size-5 shrink-0"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round"></path>
+    </svg>
+  </li>
+  <li class="breadcrumbs-li">
+    <a
+      class="flex items-center text-sm hover:text-blue-600 focus:text-blue-600 focus:outline-none"
+      href="../pages/subscribe.html"
+    >
+      訂閱方案
+    </a>
+    <svg
+      class="size-5 shrink-0"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round"></path>
+    </svg>
+  </li>
+  <li class="breadcrumbs-li truncate text-sm font-semibold" aria-current="page">
+    付款
+  </li>
+</ol>
+        <h2 class="sub-title">付款</h2>
+      </div>
+      <div class="container">
+        <ul
+          class="flex flex-col gap-6 pb-[3.75rem] xl:flex-row xl:pb-[6.25rem]"
+        >
+          <li class="flex-grow">
+            <ul class="flex flex-col gap-6">
+              <li
+                class="flex flex-col rounded-xl border border-primary-300 bg-white p-6"
+              >
+                <h5 class="pb-6 text-xl font-black xl:pb-10">購買人</h5>
+                <form class="flex flex-col gap-4" action="#">
+                  <div>
+                    <label class="font-bold" for="name">姓名</label>
+                    <div>
+                      <input
+                        class="mt-3 w-full bg-gray-100 px-4 py-3 font-semibold"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="請輸入姓名"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label class="font-bold" for="password">密碼</label>
+                    <div>
+                      <input
+                        class="mt-3 w-full bg-gray-100 px-4 py-3 font-semibold"
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="請輸入密碼"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label class="font-bold" for="email">電子信箱</label>
+                    <div>
+                      <input
+                        class="mt-3 w-full bg-gray-100 px-4 py-3 font-semibold"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="請輸入電子信箱"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <input
+                      class="mt-3 bg-gray-100 px-4 py-3 font-semibold"
+                      type="checkbox"
+                      name="remember-info"
+                      id="remember-info"
+                      required=""
+                    />
+                    <label for="remember-info">記住我的資訊</label>
+                  </div>
+                </form>
+              </li>
+              <li
+                class="flex flex-col rounded-xl border border-primary-300 bg-white p-6 xl:col-span-4"
+              >
+                <h5 class="pb-6 text-xl font-black xl:pb-10">付款資訊</h5>
+                <form class="flex flex-col gap-4 pb-6" action="#">
+                  <div>
+                    <h4 class="font-bold">Pay With</h4>
+                    <div>
+                      <input
+                        class="mt-3 bg-gray-100 px-4 py-3 font-semibold"
+                        type="radio"
+                        name="credit-card"
+                        id="credit-card"
+                        required=""
+                        checked
+                      />
+                      <label for="credit-card">信用卡</label>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="font-bold" for="credit-card-num">
+                      信用卡號碼
+                    </label>
+                    <div>
+                      <input
+                        class="no-spinner mt-3 w-full bg-gray-100 px-4 py-3 font-semibold"
+                        type="number"
+                        name="credit-card-num"
+                        id="credit-card-num"
+                        placeholder="1234 5678 1234 5678"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div class="flex gap-6">
+                    <div class="flex-grow">
+                      <label class="font-bold" for="expiry-date">過期日</label>
+                      <input
+                        class="no-spinner mt-3 w-full bg-gray-100 px-4 py-3 font-semibold"
+                        type="number"
+                        name="expiry-date"
+                        id="expiry-date"
+                        placeholder="MM/YY"
+                        required=""
+                      />
+                    </div>
+                    <div class="flex-grow">
+                      <label class="font-bold" for="cvv">認證碼</label>
+                      <input
+                        class="no-spinner mt-3 w-full bg-gray-100 px-4 py-3 font-semibold"
+                        type="number"
+                        name="cvv"
+                        id="cvv"
+                        placeholder="CVV"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <input
+                      class="mt-3 bg-gray-100 px-4 py-3 font-semibold"
+                      type="checkbox"
+                      name="remember-card"
+                      id="remember-card"
+                      required=""
+                    />
+                    <label for="remember-card">記住卡片資訊</label>
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="space-y-6 rounded-xl border-2 border-accent-200 bg-white p-6 xl:self-start"
+          >
+            <div class="font-bold xl:pb-[3.75rem]">
+              <h5
+                class="border-b border-gray-200 pb-6 text-xl font-black text-accent-200 xl:pb-10"
+              >
+                訂單資訊
+              </h5>
+              <div
+                class="flex items-center justify-between pb-3 pt-6 font-bold lg:text-xl xl:pb-4"
+              >
+                <p>輕量型方案</p>
+                <p class="font-Newsreader font-black">NT 1,188</p>
+              </div>
+              <p class="border-b border-gray-200 pb-6 font-bold text-[#A1A1AA]">
+                年繳
+              </p>
+              <div class="border-b border-gray-200 py-6">
+                <label class="font-bold" for="coupon">折扣碼</label>
+                <div class="mt-3 flex gap-3">
+                  <input
+                    class="no-spinner w-full bg-gray-100 px-4 py-3 font-semibold"
+                    type="number"
+                    name="coupon"
+                    id="coupon"
+                    placeholder="請輸入折扣碼"
+                    required=""
+                  />
+                  <button
+                    class="text-nowrap rounded-full bg-gray-100 px-4 py-3 font-bold text-gray-400 transition-all hover:bg-accent-200 hover:text-white"
+                  >
+                    套用
+                  </button>
+                </div>
+              </div>
+              <div class="space-y-6 py-6 font-bold text-[#52525B]">
+                <div class="flex justify-between">
+                  <p>小計</p>
+                  <p class="font-Newsreader">NT 1,188</p>
+                </div>
+                <div class="flex justify-between">
+                  <p>折扣</p>
+                  <p>0</p>
+                </div>
+              </div>
+              <div class="flex justify-between">
+                <p class="font-bold text-[#52525B]">總計</p>
+                <p class="font-Newsreader text-2xl font-bold text-[#09090B]">
+                  NT 1,188
+                </p>
+              </div>
+            </div>
+            <a
+              class="btn-click flex items-center justify-center gap-3 rounded-full bg-accent-200 px-5 py-3 font-bold text-white"
+              href="./checkout-finish.html"
+            >
+              立即付款
+              <span class="material-symbols-outlined text-xl">east</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+  <div class="md:container">
+    <p
+      class="border-t border-[#ADB5BD] py-5 text-center font-Newsreader text-[#6E6B67] lg:font-semibold"
+    >
+      ©Vivre 2024 All right Reserved
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

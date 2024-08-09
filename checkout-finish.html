@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout</title>
+    <script type="module" crossorigin src="/hexWeek6/assets/main-D7yKPFcN.js"></script>
+    <link rel="stylesheet" crossorigin href="/hexWeek6/assets/main-B3dHIHND.css">
+  </head>
+  <body>
+    <nav
+  class="fixed z-50 w-full bg-primary-100 bg-opacity-80 backdrop-blur-sm"
+  id="navbar"
+>
+  <div class="container flex justify-between py-5 lg:py-9">
+    <div
+      class="flex w-full items-center justify-between lg:justify-normal lg:gap-9"
+    >
+      <a class="btn-click flex" href="../pages/index.html">
+        <h1 class="text-xl text-[#343A40]">Vivre</h1>
+      </a>
+      <button class="flex lg:hidden" id="menu-button">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <div
+        class="hidden items-center rounded-full border border-gray-200 bg-white px-5 lg:flex"
+      >
+        <input class="max-w-[210px] py-3" type="text" placeholder="搜尋文章" />
+        <button class="btn-click">
+          <span class="material-symbols-outlined text-">search</span>
+        </button>
+      </div>
+    </div>
+    <ul
+      class="hidden items-center gap-5 text-nowrap font-bold lg:flex"
+      id="nav-links"
+    >
+      <li>
+        <a class="btn-click block px-5 py-2" href="../pages/article-cost.html">
+          所有文章
+        </a>
+      </li>
+      <li>
+        <a class="btn-click block px-5 py-2" href="../pages/subscribe.html">
+          訂閱方案
+        </a>
+      </li>
+      <li>
+        <a class="btn-click block px-5 py-2" href="../pages/about.html">
+          關於我們
+        </a>
+      </li>
+      <li>
+        <a
+          class="btn-click block rounded-full bg-accent-200 px-6 py-4 text-white"
+          href="../pages/signUp.html"
+        >
+          登入/註冊
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div
+  id="mobile-menu"
+  class="fixed inset-0 z-50 -translate-x-full transform bg-primary-100"
+>
+  <div class="container flex flex-col">
+    <button id="close-button" class="mb-6 mt-2 size-11 self-end">
+      <span class="material-symbols-outlined p-3">close</span>
+    </button>
+    <ul class="flex flex-col gap-6 pb-10 font-bold">
+      <li
+        class="flex items-center rounded-full border border-gray-200 bg-white px-5"
+      >
+        <input class="w-full py-3" type="text" placeholder="搜尋文章" />
+        <button class="transition-all hover:scale-125">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+      </li>
+      <li><a class="p-3" href="../pages/article-cost.html">所有文章</a></li>
+      <li><a class="p-3" href="../pages/subscribe.html">訂閱方案</a></li>
+      <li><a class="p-3" href="../pages/about.html">關於我們</a></li>
+    </ul>
+    <a
+      class="rounded-full bg-accent-200 px-6 py-4 text-center text-white"
+      href="../pages/signUp.html"
+    >
+      登入/註冊
+    </a>
+  </div>
+</div>
+<div id="navbar-placeholder"></div>
+    <main>
+      <div class="container flex flex-col gap-6 py-[3.75rem] font-bold">
+        <div class="flex items-center justify-center gap-5 text-accent-200">
+          <span class="material-icons text-5xl">task_alt</span>
+          <h2 class="text-[1.75rem] xl:text-[2.5rem]">付款成功</h2>
+        </div>
+        <div
+          class="flex flex-col gap-6 rounded-xl border border-primary-300 bg-white p-6 md:mx-auto md:w-1/2 xl:p-10"
+        >
+          <h5 class="text-xl font-black xl:text-2xl">訂購資訊</h5>
+          <div class="flex flex-col border-y border-gray-200 py-6">
+            <div class="flex justify-between pb-2 xl:text-xl xl:font-black">
+              <p>輕量型方案</p>
+              <p class="font-Newsreader">NT 1,188</p>
+            </div>
+            <p class="pb-6 text-[#A1A1AA]">年繳</p>
+            <div class="space-y-4">
+              <div class="flex justify-between">
+                <p class="text-[#A1A1AA]">開始日</p>
+                <time
+                  class="font-Newsreader text-gray-400"
+                  datetime="2024 / 5 / 1"
+                >
+                  2024 / 5 / 1
+                </time>
+              </div>
+              <div class="flex justify-between">
+                <p class="text-[#A1A1AA]">終止日</p>
+                <time
+                  class="font-Newsreader text-gray-400"
+                  datetime="2024 / 5 / 1"
+                >
+                  2025 / 5 / 1
+                </time>
+              </div>
+            </div>
+          </div>
+          <a
+            class="btn-click flex items-center justify-center gap-3 rounded-full bg-accent-200 px-5 py-3 font-bold text-white"
+            href="./article.html"
+          >
+            瀏覽文章
+            <span class="material-symbols-outlined text-xl">east</span>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer>
+  <div class="md:container">
+    <p
+      class="border-t border-[#ADB5BD] py-5 text-center font-Newsreader text-[#6E6B67] lg:font-semibold"
+    >
+      ©Vivre 2024 All right Reserved
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
