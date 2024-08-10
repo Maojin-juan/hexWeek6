@@ -45,6 +45,10 @@
 
 @layer utilities {
   /* 自組樣式 */
+  .nav-li {
+    @apply block px-5 py-2;
+  }
+
   .sub-title {
     @apply text-2xl font-black;
   }
@@ -77,6 +81,24 @@
     @apply absolute -bottom-2 -right-12 lg:hidden;
   }
 
+  .index-theme-a {
+    @apply transition-all hover:animate-pulse;
+  }
+  .theme-li {
+    @apply rounded-[0.25rem] transition-all hover:bg-accent-100;
+  }
+
+  .theme-a {
+    @apply block px-4 py-4;
+  }
+
+  .history-li {
+    @apply grid grid-cols-12 gap-3;
+  }
+
+  .subscribe-li {
+    @apply flex items-center gap-2;
+  }
   .swiper-button-next,
   .swiper-button-prev {
     @apply !static;
