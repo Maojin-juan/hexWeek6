@@ -119,4 +119,22 @@
     content: "";
     @apply absolute -bottom-1 left-0 h-full w-full bg-gradient-to-b from-transparent to-white;
   }
+
+  /* 自定義樣式 */
+  .custom-radio + label .radio-outer-circle {
+    @apply h-4 w-4 rounded-full bg-accent-200;
+  }
+
+  .custom-radio + label .radio-inner-circle {
+    @apply h-1.5 w-1.5 rounded-full bg-white;
+  }
+
+  /* 當 radio 按鈕被選中時的樣式 */
+  .custom-radio:checked + label .radio-outer-circle {
+    @apply bg-accent-200;
+  }
+
+  .custom-radio:checked + label .radio-inner-circle {
+    @apply bg-white;
+  }
 }
